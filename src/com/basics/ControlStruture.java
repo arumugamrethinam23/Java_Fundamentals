@@ -34,6 +34,32 @@ public class ControlStruture {
             System.out.println("Checking value: " + value);
             value++;
         }
+        
+        
+        //Switch case - checking the order status 
+        String orderStatus = "Packed";
+
+        switch (orderStatus) {
+            case "Ordered":
+                System.out.println("Your order has been placed.");
+                break;
+
+            case "Packed":
+                System.out.println("Your order is packed.");
+                break;
+
+            case "Shipped":
+                System.out.println("Your order is on the way!");
+                break;
+
+            case "Delivered":
+                System.out.println("Your order has been delivered.");
+                break;
+
+            default:
+                System.out.println("Unknown status.");
+        }
+
 	}
 
 }
