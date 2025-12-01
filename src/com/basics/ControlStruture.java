@@ -4,7 +4,23 @@ public class ControlStruture {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
- 
+		int age = 65;
+
+        if (age < 0) {
+            System.out.println("Invalid age!");
+        } 
+        else if (age <= 12) {
+            System.out.println("You are a Child.");
+        } 
+        else if (age <= 19) {
+            System.out.println("You are a Teenager.");
+        } 
+        else if (age <= 59) {
+            System.out.println("You are an Adult.");
+        } 
+        else {
+            System.out.println("You are a Senior Citizen.");
+        }
   
 	}
 
