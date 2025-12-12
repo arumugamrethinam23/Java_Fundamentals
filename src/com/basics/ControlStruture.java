@@ -1,5 +1,8 @@
 package com.basics;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ControlStruture {
 
 	public static void main(String[] args) {
@@ -59,7 +62,32 @@ public class ControlStruture {
             default:
                 System.out.println("Unknown status.");
         }
+        // For - Each 
+        String[] cartItems = {
+            "Apple iPhone 15",
+            "Samsung 55-inch TV",
+            "Boat Airdopes 200",
+            "HP Laptop i5"
+        };
 
+        System.out.println("Cart items:");
+        for (String item : cartItems) {
+            System.out.println("- " + item);
+        }
+
+        // ArrayList of prices — compute total using for-each
+        
+        List<Double> prices = new ArrayList<>();
+        prices.add(79999.0);
+        prices.add(54999.0);
+        prices.add(1999.0);
+        prices.add(45999.0);
+
+        double total = 0.0;
+        for (Double price : prices) {
+            total += price;   // accumulate the sum
+        }
+        System.out.println("Total cart value: ₹" + total);
 	}
 
 }
