@@ -11,6 +11,9 @@ public class WordSearch {
         // Checking horizontal (left to right)
         for (int row = 0; row < n; row++) {
             for (int col = 0; col <= n - 3; col++) {
+            	
+            	
+            	
                 if (grid[row][col] == 'C' && 
                     grid[row][col + 1] == 'A' && 
                     grid[row][col + 2] == 'T') {
